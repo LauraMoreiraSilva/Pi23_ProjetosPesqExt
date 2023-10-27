@@ -1,0 +1,78 @@
+nav{
+    border-bottom-width: 2px;
+    border-bottom-color: #DDDDDD;
+    border-bottom-style: solid;
+    height: 210px;
+    padding-bottom: 5px;
+}
+.flutuacao{
+    float: left;
+    margin: 10px;
+}
+
+div{
+    height: 150px;
+    width: 30%;
+}
+.links{
+    height: 40px;
+    width: 14%;
+    float: left;
+    text-align: center;
+    margin-right: -30pt;
+    padding-bottom: -10px;
+    
+    
+}
+.navegar{
+    width:100%;
+    height: 40px;
+    clear: both;
+    padding-left: 87px;
+}
+.link{
+    color: #2E7335;
+    font-style: normal;
+    font-family: inter;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: transparent;
+
+}
+input[type="search"]{
+border-radius: 10pt;
+width: 250px;
+height: 35px;
+border-color: #DDDDDD;
+border-width: 1px;
+border-bottom-width: 3px;
+margin-left: 90px;
+}
+button{
+    background-color: #2E7335;
+    color: #FFFFFF;
+    border-radius: 10pt;
+    font-size: 15px;
+    font-family: inter;
+    width: 60px;
+    height: min-content;
+    border-color: #2E7335;
+}
+.b{
+    border-radius: 0pt;
+    font-size: 20px;
+    width: 70px;
+    float: left;
+    margin-left: 10px;
+    
+}
+.l{
+    background-color: #FFFFFF;
+    color: #2E7335;
+    
+}
+.d{
+    width: 16%;
+    height: 40px;
+    padding-bottom: 20px;    
+}
