@@ -76,3 +76,11 @@ button{
     height: 40px;
     padding-bottom: 20px;    
 }
+li{
+    list-style-type: none;
+    
+    
+}
+.c{
+    width: 35%;
+}
