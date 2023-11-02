@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Modelo</title>
-    <link rel="stylesheet" type="text/css" href="layout.css"/>
+    <link rel="stylesheet" type="text/css" href="temp\layout\layout.css"/>
   </head>
   <body>
     <nav class="navbar bg-body-tertiary">
@@ -50,18 +50,18 @@
               </div>
             </div>
 
-      <div id="cadastro" >
+      <div id="cadastro">
           <h1>Cadastro de Usúario</h1>
-        <form method="post" action=""> 
+        <form method="post" action="" width="100%"> 
            
-            <div class="flutuacao" width="40%">
+            <div class="flutuacao" width="300px">
                 <p> 
                     <label for="nome_cad">Nome completo:</label>
                     <input id="nome_cad" name="nome_cad" required="required" type="text" />
                 </p>
 
                 <p> 
-                    <label for="matricula_cad">Matrícula::</label>
+                    <label for="matricula_cad">Matrícula:</label>
                     <input id="matricula_cad" name="matricula_cad" required="required" type="number" />
                 </p>
                 
@@ -84,7 +84,7 @@
                 </p>
             </div>
 
-          <div class="flutuacao" width="40%">
+          <div class="flutuacao" width="300px">
             <p> 
                 <label for="cpf_cad">CPF:</label>
                 <input id="cpf_cad" name="cpf_cad" required="required" type="number"/>
@@ -101,7 +101,7 @@
             </p>
           </div>
           <div>
-            <p class="button"> 
+            <p> 
                 <input type="submit" value="Cadastrar"/> 
             </p>
           </div> 

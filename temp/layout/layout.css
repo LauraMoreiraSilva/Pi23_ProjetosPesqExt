@@ -103,4 +103,51 @@ li{
     margin-top: 50px;
     text-align: left;
     margin-left: 20px;
+    float: left;
+}
+form{
+    color: #2E7335;
+    width: max-content;
+    align-items: start;
+    font: inter;
+    font-size: 18px;
+}
+input[type="submit"]{
+    background-color: #2E7335;
+    color: #FFFFFF;
+    
+    font-size: 15px;
+    font-family: inter;
+    width: 60px;
+    height: min-content;
+    border-color: #2E7335;
+}
+body{
+    color: #2E7335;
+    font: inter;
+    font-size: 18px;
+}
+.i{
+    float: left;
+    width: 80%;
+    color: black;
+    margin-left: 30px;
+}
+.imagem{
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.titulo{
+    font-weight: bold;
+    font-size: 18px;
+    font: inter;
+}
+.nome{
+    width: 70%;
+    float: left;
+}
+td{
+    width: 250px;
+    padding-bottom: 20px;
 }
