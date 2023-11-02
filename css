@@ -82,25 +82,18 @@ li{
     
 }
 .c{
+    width: 35%;
+}
 
-    width: 95%;
-    border-bottom: #DDDDDD;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    height: 40px;
-    color: #2E7335;
-    font-size: 18px;
-    font-family: inter;
-    padding-bottom: 5px;
-    padding-top: 5px;
+
+h1 {
+
+
+
+
+
+
+    
+    text-align: center;
 }
-.p{
-    height: 350px;
-    border-color: #DDDDDD;
-    border-width: 1px;
-    border-style: solid;
-    width: 200px;
-    margin-top: 50px;
-    text-align: left;
-    margin-left: 20px;
-}
+
