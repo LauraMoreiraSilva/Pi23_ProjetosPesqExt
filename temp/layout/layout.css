@@ -58,19 +58,7 @@ button{
     height: min-content;
     border-color: #2E7335;
 }
-.b{
-    border-radius: 0pt;
-    font-size: 20px;
-    width: 70px;
-    float: left;
-    margin-left: 10px;
-    
-}
-.l{
-    background-color: #FFFFFF;
-    color: #2E7335;
-    
-}
+
 .d{
     width: 16%;
     height: 40px;
@@ -150,4 +138,21 @@ body{
 td{
     width: 250px;
     padding-bottom: 20px;
+}
+.b{
+    border-radius: 0pt;
+    font-size: 20px;
+    width: 70px;
+    float: left;
+    margin-left: 10px;
+    
+}
+.l{
+    background-color: #FFFFFF;
+    color: #2E7335;
+    
+}
+.card{
+    float: left;
+    height: min-content;
 }
