@@ -78,5 +78,8 @@
     </div>
 
   </body>
+  <div>
   <?php include "Bases/rodape.php" ?>
+  </div>
+  
 </html>
