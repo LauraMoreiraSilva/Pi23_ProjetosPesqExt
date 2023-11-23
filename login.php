@@ -4,6 +4,7 @@
     <?php
       include "Bases/head.php";
     ?>
+    <title>Login</title>
   </head>
   <body>
       <?php

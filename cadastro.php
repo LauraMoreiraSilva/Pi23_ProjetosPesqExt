@@ -4,6 +4,7 @@
   <?php
     include "Bases/head.php";
     ?>
+    <title>Cadastro</title>
   <body>
     <?php 
     include "Bases/menu.php";  

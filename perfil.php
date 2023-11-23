@@ -4,6 +4,7 @@
     <?php
       include "Bases/head.php";
     ?>
+    <title>Perfil</title>
   </head>
   <body>
       <?php
