@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS proj_pesqext;
-USE proj_pesqext;
+CREATE DATABASE IF NOT EXISTS pi23_projetospesqext;
+USE pi23_projetospesqext;
 CREATE TABLE IF NOT EXISTS curso(
 id INT AUTO_INCREMENT PRIMARY KEY,
 nome VARCHAR(20),
