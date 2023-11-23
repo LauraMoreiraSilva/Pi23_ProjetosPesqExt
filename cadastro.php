@@ -1,11 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Modelo</title>
-    <link rel="stylesheet" type="text/css" href="temp\layout\layout.css"/>
-  </head>
+  <?php
+    include "Bases/head.php";
+    ?>
   <body>
     <nav class="navbar bg-body-tertiary">
         <div class="container flutuacao">
