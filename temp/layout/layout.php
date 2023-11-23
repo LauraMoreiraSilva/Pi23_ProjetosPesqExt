@@ -1,9 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <?php
-    include "Bases/head.php";
-    ?>
+    <?php include "Bases/head.php"; ?>
   </head>
   <body>
     <nav class="navbar bg-body-tertiary">
