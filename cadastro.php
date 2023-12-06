@@ -11,7 +11,7 @@
     ?>
     <div id="cadastro">
           <h1>Cadastro de Usúario</h1>
-        <form method="post" action="" width="100%"> 
+        <form method="post" action="bd_registro.php" width="100%"> 
            
             <div class="flutuacao" width="300px">
                 <p> 
@@ -24,10 +24,6 @@
                     <input id="matricula_cad" name="matricula_cad" required="required" type="number" />
                 </p>
                 
-                <p> 
-                    <label for="curso_cad">Curso:</label>
-                    <input id="curso_cad" name="curso_cad" required="required" type="text"/> 
-                </p>
                 
                 <p> 
                     <label for="senha_cad">Sua senha:</label>
