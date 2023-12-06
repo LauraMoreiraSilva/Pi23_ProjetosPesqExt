@@ -9,13 +9,10 @@
                 <img src="https://portal.ifrn.edu.br/media/images/42739_Divulgado_resultado_de_selecao_de_projet.width-500.png" alt="IFRN" width="300px" height="150px">
             </a>
         </div>
-        <div class="container-fluid flutuacao">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
-        
+        <?php 
+          session_start();
+          if (!isset($_SESSION['usuario'])) {
+          ?>
             <div class="collapse navbar-collapse navegar" id="navbarScroll" >
               <div class="nav-item links">
                 <a class="nav-link active link" aria-current="page" href="#">Início</a>
@@ -35,10 +32,34 @@
               <div class="nav-item links">
                 <a class="nav-link active link" aria-current="page" href="#">Extensão</a>
               </div>
-              <div class="container-fluid flutuacao d">
                 <button class="btn btn-outline-success b" type="submit">Login</button>
-                <button class="btn btn-outline-success b l" type="submit">Logout</button>
-              </div>
             </div>
+            <?php 
+          }else{
+          ?>
+              <div class="collapse navbar-collapse navegar" id="navbarScroll" >
+              <div class="nav-item links">
+                <a class="nav-link active link" aria-current="page" href="#">Início</a>
+              </div>
+              <div class="nav-item links">
+                <a class="nav-link active link" aria-current="page" href="#">Meu Perfil</a>
+              </div>
+              <div class="nav-item links">
+                <a class="nav-link active link" aria-current="page" href="#">Meus Projetos</a>
+              </div>
+              <div class="nav-item links">
+                <a class="nav-link active link" aria-current="page" href="#">Todos os Projetos</a>
+              </div>
+              <div class="nav-item links">
+                <a class="nav-link active link" aria-current="page" href="#" >Pesquisa</a>
+              </div>
+              <div class="nav-item links">
+                <a class="nav-link active link" aria-current="page" href="#">Extensão</a>
+              </div>
+                <button class="btn btn-outline-success b" type="submit">Logout</button>
+            </div>
+            <?php 
+          }
+          ?>
             
     </nav>
