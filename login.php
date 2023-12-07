@@ -12,7 +12,7 @@
       ?>
     <div id="login" >
           <h1>Login do Usuário</h1>
-        <form method="post" action="" > 
+        <form method="post" action="php/bd_autenticacao.php" > 
            
             <div class="flutuacao" width="40%">
                
