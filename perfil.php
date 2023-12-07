@@ -69,7 +69,7 @@
                 <strong>Matrícula:</strong> xxxxxxxxx
               </td>
               <td>
-                <strong>Curso:</strong> xxxxxxxxa
+                <strong>Curso:</strong> xxxxxxxxB
               </td>
               
             </tr>
