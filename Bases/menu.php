@@ -14,51 +14,61 @@
           if (!isset($_SESSION['usuario'])) {
           ?>
             <div class="collapse navbar-collapse navegar" id="navbarScroll" >
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#">Início</a>
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.php">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfil.php">Meu Prefil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meus Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Todos os Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Pesquisa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Extensão</a>
+              </li>
+            </ul>
+            <button class="btn btn-outline-success b" type="submit"><a href="login.php">Login</a></button>
               </div>
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#">Meu Perfil</a>
-              </div>
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#">Meus Projetos</a>
-              </div>
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#">Todos os Projetos</a>
-              </div>
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#" >Pesquisa</a>
-              </div>
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#">Extensão</a>
-              </div>
-                <button class="btn btn-outline-success b" type="submit">Login</button>
+              
             </div>
             <?php 
           }else{
           ?>
               <div class="collapse navbar-collapse navegar" id="navbarScroll" >
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#">Início</a>
-              </div>
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#">Meu Perfil</a>
-              </div>
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#">Meus Projetos</a>
-              </div>
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#">Todos os Projetos</a>
-              </div>
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#" >Pesquisa</a>
-              </div>
-              <div class="nav-item links">
-                <a class="nav-link active link" aria-current="page" href="#">Extensão</a>
-              </div>
-                <button class="btn btn-outline-success b" type="submit">Logout</button>
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.php">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfil.php">Meu Prefil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meus Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Todos os Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Pesquisa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Extensão</a>
+              </li>
+            </ul>
+              <button class="btn btn-outline-success b" type="submit" name="logout">Logout</button>
             </div>
             <?php 
+          }
+
+          if (isset($_POST["logout"])) {
+            include "sessao/desconectar.php";
           }
           ?>
             
