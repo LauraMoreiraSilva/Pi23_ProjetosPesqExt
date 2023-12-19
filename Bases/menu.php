@@ -67,9 +67,22 @@
             <?php 
           }
 
-          if (isset($_POST["logout"])) {
-            include "sessao/desconectar.php";
-          }
-          ?>
+          // Função para verificar se o usuário está autenticado
+        function estaAutenticado() {
+          return isset($_SESSION['usuario']) && !empty($_SESSION['usuario']);
+}
+          if ($usuarioAutenticado) {
+            echo '<button class="btn btn-outline-success b" type="submit" name="logout">Logout</button>';
+    } else {
+            echo '<button class="btn btn-outline-success b" type="submit"><a href="login.php">Login</a></button>';
+    }
+
+    // ... Outro código ...
+
+        if (isset($_POST["logout"])) {
+          include "sessao/desconectar.php";
+    }
+
+?>
             
     </nav>
