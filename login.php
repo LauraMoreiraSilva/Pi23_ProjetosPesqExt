@@ -25,7 +25,7 @@
                     <label for="senha_cad">Senha:</label>
                     <input id="senha" name="senha" required="required" type="password"/>
 
-                      <p class="button"> 
+                      <p> 
                 <input type="submit" value="Entrar"/> 
             </p>
                 </p>

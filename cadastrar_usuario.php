@@ -25,20 +25,6 @@
                         <input id="senha_cad" name="senha_cad" required="required" type="password"/>
                     </p>
                     <p> 
-                    <label for="cpf_cad">CPF:</label>
-                    <input id="cpf_cad" name="cpf_cad" required="required" type="number"/>
-                    </p>
-
-                    <p> 
-                        <label for="telefone_cad">Telefone:</label>
-                        <input id="telefone_cad" name="telefone_cad" required="required" type="number"/>
-                    </p>
-
-                    <p> 
-                        <label for="email_cad">E-mail:</label>
-                        <input id="email_cad" name="email_cad" required="required" type="text">
-                    </p>
-                    <p> 
                         <input type="submit" value="Cadastrar"/> 
                     </p>
                 </div>

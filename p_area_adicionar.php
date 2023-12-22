@@ -25,9 +25,7 @@
  <p><input type="submit" value="Cadastrar"></p>
 </form>
  </div>
- <div class="col-lg-6">
-   <img class="img-fluid rounded" src="src/img/campus.jpg" alt="">
- </div>
+
 </div>
 </div>
 
