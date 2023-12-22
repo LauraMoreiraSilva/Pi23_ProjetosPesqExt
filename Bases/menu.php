@@ -13,7 +13,10 @@
                 <a class="nav-link" href="projetos.php">Projetos</a>
               </li>
               <?php
-              session_start();
+                if(session_id() == ''){
+                  session_start();
+                }
+                
                 if (!isset($SESSION["usuario"])) {
               ?>
               <li class="nav-item">

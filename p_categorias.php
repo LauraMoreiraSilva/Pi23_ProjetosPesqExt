@@ -1,16 +1,26 @@
+<?php include 'sessao/verificar_autenticado.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <?php include "Bases/head";?>
+    <title>Núcleos de Pesquisa</title>
+
+    <!-- INCLUINDO CÓDIGO DE HEAD COMUM A TODAS AS PÁGINAS -->
+    <?php include 'bases/head.php'; ?>
+
 </head>
+
 <body>
-    <?php include "Bases/menu";?>
+  <!-- INCLUINDO CÓDIGO DE MENU COMUM A TODAS AS PÁGINAS -->
+  <?php include 'bases/menu.php'; ?>
+
     <div class="container">
 
 <div class="row mt-5 mb-5">
 <div class="col-lg-6">
- <h2>Áreas</h2>
-<p><a href="p_areas_adicionar.php">Adicionar</a></p>
+ <h2>Categorias</h2>
+<p><a href="p_categoria_adicionar.php">Adicionar</a></p>
 
  <table class="table table-striped">
  <thead>
@@ -53,5 +63,5 @@ desconectar($conn);
 </table>
 
 </body>
-<?php include "Bases/rodape";?>
+<?php include 'Bases/rodape.php';?>
 </html>

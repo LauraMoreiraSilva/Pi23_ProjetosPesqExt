@@ -4,16 +4,16 @@
 <html lang="en">
 
 <head>
-    <title>Núcleos de Pesquisa</title>
 
     <!-- INCLUINDO CÓDIGO DE HEAD COMUM A TODAS AS PÁGINAS -->
-    <?php include 'Bases/head.php'; ?>
+    <?php include 'bases/head.php'; ?>
 
 </head>
 
 <body>
   <!-- INCLUINDO CÓDIGO DE MENU COMUM A TODAS AS PÁGINAS -->
-  <?php include 'Bases/menu.php'; ?>
+  <?php include 'bases/menu.php'; ?>
+
 
 
   <div class="container">

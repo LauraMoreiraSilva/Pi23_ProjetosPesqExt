@@ -17,6 +17,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         session_start();
         $_SESSION['administrador'] = $row['nome'];
+        $_SESSION['matricula'] = $row['matricula'];
     }
     desconectar($conn);
     header("Location: ../perfil.php");
