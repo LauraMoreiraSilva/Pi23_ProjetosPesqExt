@@ -8,7 +8,7 @@ require_once('../banco/conexao.php');
 
 // Verificar se o usuário existe no banco de dados
 // (Nota: A lógica de verificação pode variar dependendo da estrutura do seu banco de dados)
-$query = "SELECT * FROM usuarios WHERE matricula = '$matricula' AND password = '$password'";
+$query = "SELECT * FROM administrador WHERE matricula = '$matricula' AND password = '$password'";
 $result = mysqli_query($conexao, $query);
 
 if (mysqli_num_rows($result) > 0) {
