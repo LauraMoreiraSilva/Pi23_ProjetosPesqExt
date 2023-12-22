@@ -5,7 +5,7 @@
 </head>
 <body>
     <?php include "Bases/menu"?>
-    <form method="post" action="bd_registro.php" width="100%"> 
+    <form method="post" action="php/bd_registro.php" width="100%"> 
            
             <div class="row mt-5 mb-5">
                 <div class="col-lg-6">

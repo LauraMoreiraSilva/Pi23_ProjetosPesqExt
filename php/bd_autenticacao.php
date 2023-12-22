@@ -1,23 +1,29 @@
 <?php
 // Receber dados do formulário de login
 $matricula = $_POST['matricula'];
-$senha = $_POST['senha_cad'];
+$senha = $_POST['senha'];
+$senha = md5($senha);
 
 // Importar o arquivo de conexão com o banco de dados
-require_once('../banco/conexao.php');
+    include "../Banco/conexao.php";
+    $conn = conectar();
 
 // Verificar se o usuário existe no banco de dados
 // (Nota: A lógica de verificação pode variar dependendo da estrutura do seu banco de dados)
-$query = "SELECT * FROM administrador WHERE matricula = '$matricula' AND senha = '$senha'";
-$result = mysqli_query($conexao, $query);
+$sql = "SELECT * FROM administrador WHERE matricula = '$matricula' AND senha = '$senha'";
+$result = $conn->query($sql);
 
-if (mysqli_num_rows($result) > 0) {
-    // Usuário existe, redirecionar para a página perfil.php
-    header("Location: perfil.php");
-    exit();
-} else {
-    // Usuário não existe, redirecionar para a página de login.php novamente
-    header("Location: ../login.php");
-    exit();
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        session_start();
+        $_SESSION['administrador'] = $row['nome'];
+    }
+    desconectar($conn);
+    header("Location: ../perfil.php");
+    die();
+}else{
+    desconectar($conn);
+    header("Location: ../login.php?erro=administrador+e/ou+senha+incorretos");
+    die();
 }
 ?>
