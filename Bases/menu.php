@@ -34,4 +34,84 @@
             </ul>
           </div>
         </div>
+<<<<<<< HEAD
     </nav>
+=======
+        <?php 
+          session_start();
+          if (!isset($_SESSION['usuario'])) {
+          ?>
+            <div class="collapse navbar-collapse navegar" id="navbarScroll" >
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.php">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfil.php">Meu Prefil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meus Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Todos os Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Pesquisa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Extensão</a>
+              </li>
+            </ul>
+            <button class="btn btn-outline-success b" type="submit"><a href="login.php">Login</a></button>
+              </div>
+              
+            </div>
+            <?php 
+          }else{
+          ?>
+              <div class="collapse navbar-collapse navegar" id="navbarScroll" >
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.php">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfil.php">Meu Prefil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meus Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Todos os Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Pesquisa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Extensão</a>
+              </li>
+            </ul>
+              <button class="btn btn-outline-success b" type="submit" name="logout">Logout</button>
+            </div>
+            <?php 
+          }
+
+          // Função para verificar se o usuário está autenticado
+        function estaAutenticado() {
+          return isset($_SESSION['usuario']) && !empty($_SESSION['usuario']);
+}
+          if ($usuarioAutenticado) {
+            echo '<button class="btn btn-outline-success b" type="submit" name="logout">Logout</button>';
+    } else {
+            echo '<button class="btn btn-outline-success b" type="submit"><a href="login.php">Login</a></button>';
+    }
+
+    // ... Outro código ...
+
+        if (isset($_POST["logout"])) {
+          include "sessao/desconectar.php";
+    }
+
+?>
+            
+    </nav>
+>>>>>>> ad600f9cf20c86d1d009bc6bf2ffd12041ceb669
