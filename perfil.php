@@ -14,7 +14,7 @@
     <div class="w">
         <h2>Meus dados</h2>
         <p>Confira seus dados</p>
-        <a href="#">Acessar</a>
+        <a href="p_meus_dados">Acessar</a>
     </div>
 
     <div class="w">
