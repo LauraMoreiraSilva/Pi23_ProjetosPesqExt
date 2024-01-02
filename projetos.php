@@ -12,14 +12,14 @@
 
   <div class="container">
 
-    <h2>Últimos Projetos</h2>
+    <h2>Todos os Projetos</h2>
 
     <div class="row">
 
     <?php
         include "banco/conexao.php";
         $conn = conectar();
-        $sql = "SELECT * FROM projeto ORDER BY ID DESC LIMIT 06;";
+        $sql = "SELECT * FROM projeto ORDER BY ID DESC";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) {
