@@ -18,7 +18,7 @@
 <div class="row mt-5 mb-5">
  <div class="col-lg-6">
    <h2>Cadastro de Projeto</h2>
-   <form action="php/p_projeto_adicionar_bd.php" method="post" enctype="multipart/form-data">
+   <form action="php/bd_projeto_adicionar.php" method="post" enctype="multipart/form-data">
  
   <p>
      <label for="titulo">Título:</label>
@@ -59,8 +59,6 @@
  <p>
     Selecione uma categoria:<br />
     <?php
-        include "banco/conexao.php";
-        $conn = conectar();
         $sql = "SELECT * FROM categoria";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {

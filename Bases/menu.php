@@ -1,10 +1,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid" width="100%">
-        <a class="navbar-brand" href="#"><img src="src/img/logo.png" alt=""></a>
-        </div>
+<link rel='stylesheet' type='text/css' media='screen' href='css'>
+<nav class="navbar navbar-expand-lg ">
+        
         <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="container-fluid" width="20%">
+          <a class="navbar-brand " href="#"><img src="src/img/logo.png" class="img-fluid" alt=""></a>
+        </div>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.php">Página Inicial</a>
@@ -17,7 +19,7 @@
                   session_start();
                 }
                 
-                if (!isset($SESSION["usuario"])) {
+                if (!isset($SESSION["administrador"]) && !isset($_SESSION["matricula"])) {
               ?>
               <li class="nav-item">
                 <a class="nav-link" href="cadastro.php"><i class="fa fa-floppy-o"></i>Cadastro</a>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include "Bases/head"?>
+    <?php include "Bases/head.php";?>
 </head>
 <body>
-    <?php include "Bases/menu"?>
+    <?php include "Bases/menu.php";?>
     <form method="post" action="php/bd_registro.php" width="100%"> 
            
             <div class="row mt-5 mb-5">
@@ -31,5 +31,5 @@
             </div>
         </form>
 </body>
-<?php include "Bases/rodape"?>
+<?php include "Bases/rodape.php";?>
 </html>
