@@ -36,6 +36,7 @@ if ($result->num_rows > 0) {
 <head>
 
   <?php include 'bases/head.php'; ?>
+  <title>Editar Dados do Projeto</title>
 
 </head>
 
@@ -47,7 +48,7 @@ if ($result->num_rows > 0) {
 <div class="row mt-5 mb-5">
  <div class="col-lg-6">
    <h2>Cadastro de Projeto</h2>
-   <form action="php/p_projeto_editar_bd.php" method="post" enctype="multipart/form-data">
+   <form action="php/bd_projeto_editar.php" method="post" enctype="multipart/form-data">
  
   <p>
      <label for="titulo">Título:</label>
@@ -81,7 +82,7 @@ if ($result->num_rows > 0) {
                 echo " checked ";
             }
             
-            echo "/> ".$row["titulo"]."<br />";
+            echo "/> ".$row["nome"]."<br />";
         }
         } else {
         echo "Nenhuma área cadastrada";
@@ -96,12 +97,12 @@ if ($result->num_rows > 0) {
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo "<input type='radio' name='area' value='".$row["id"]."'";
+            echo "<input type='radio' name='categoria' value='".$row["id"]."'";
             if($row["id"] == $id_categoria){
                 echo " checked ";
             }
             
-            echo "/> ".$row["titulo"]."<br />";
+            echo "/> ".$row["nome"]."<br />";
         }
         } else {
         echo "Nenhuma categoria cadastrada";

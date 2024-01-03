@@ -6,6 +6,7 @@
 <head>
 
   <?php include 'Bases/head.php'; ?>
+  <title>Cadastrar Área</title>
 
 </head>
 

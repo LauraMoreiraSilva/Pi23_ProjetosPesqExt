@@ -5,13 +5,12 @@
 
 <head>
 
-    <!-- INCLUINDO CÓDIGO DE HEAD COMUM A TODAS AS PÁGINAS -->
     <?php include 'bases/head.php'; ?>
+    <title>Áreas</title>
 
 </head>
 
 <body>
-  <!-- INCLUINDO CÓDIGO DE MENU COMUM A TODAS AS PÁGINAS -->
   <?php include 'bases/menu.php'; ?>
 
 

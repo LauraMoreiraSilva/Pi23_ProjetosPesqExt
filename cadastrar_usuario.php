@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <?php include "Bases/head.php";?>
+    <title>Cadastro de Usuário</title>
 </head>
 <body>
     <?php include "Bases/menu.php";?>

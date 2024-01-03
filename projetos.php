@@ -4,6 +4,7 @@
 <head>
 
   <?php include 'bases/head.php'; ?>
+  <title>Todos os Projetos</title>
 
 </head>
 

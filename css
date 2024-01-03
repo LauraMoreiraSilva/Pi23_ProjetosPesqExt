@@ -1,26 +1,41 @@
+body{
+    color: #2E7335;
+}
 nav{
     border-bottom-width: 2px;
     border-bottom-color: #DDDDDD;
     border-bottom-style: solid;
+    color: #2E7335;
+    font-style: normal;
+    font-family: inter;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 a{
-    color: #2E7335;
     font-style: normal;
     font-family: inter;
     font-size: 20px;
     font-weight: lighter;
     text-decoration: transparent;
-
+    color: #2E7335;
 }
+
 input[type = submit]{
     background-color: #2E7335;
     color: #FFFFFF;
     border-radius: 10pt;
     font-size: 15px;
     font-family: inter;
-    width: 60px;
+    width: min-content;
     height: min-content;
     border-color: #2E7335;
 }
 
+footer{
+    background-color: #2E7335;
+    color: #DDDDDD;
+    height: 20%;
+    align-items: center;
+    margin-top: 10px;
+}

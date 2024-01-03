@@ -49,7 +49,7 @@ if ($result->num_rows > 0) {
     echo "<td><img class='img-fluid rounded' src='src/img/".$row["imagem"]."' width='50px' alt=''></td>";  
 
     echo "<td scope='row'>".$row["titulo"]."</td>";
-    echo "<td><a href='p_projetos_editar.php?id=".$row["id"]."'>EDITAR</td>";
+    echo "<td><a href='p_projeto_editar.php?id=".$row["id"]."'>EDITAR</td>";
     echo "<td><a href='php/p_projeto_remover_bd.php?id=".$row["id"]."'>REMOVER</td>";
     echo "</tr>";
   }

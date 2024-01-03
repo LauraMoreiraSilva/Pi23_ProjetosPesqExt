@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-    <title>Núcleos de Pesquisa</title>
+    <title>Categorias</title>
 
     <!-- INCLUINDO CÓDIGO DE HEAD COMUM A TODAS AS PÁGINAS -->
     <?php include 'bases/head.php'; ?>

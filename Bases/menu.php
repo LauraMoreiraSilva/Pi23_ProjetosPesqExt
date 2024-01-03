@@ -1,15 +1,12 @@
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<link rel='stylesheet' type='text/css' media='screen' href='css'>
 <nav class="navbar navbar-expand-lg ">
         
-        <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarResponsive">
         <div class="container-fluid" width="20%">
-          <a class="navbar-brand " href="#"><img src="src/img/logo.png" class="img-fluid" alt=""></a>
+          <a class="navbar-brand " href="index.php"><img src="src/img/logo.png" class="img-fluid" alt=""></a>
         </div>
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ">
               <li class="nav-item">
-                <a class="nav-link" href="index.php">Página Inicial</a>
+                <a class="nav-link" href="index.php">Início</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="projetos.php">Projetos</a>
@@ -33,11 +30,10 @@
                 <a class="nav-link" href="perfil.php"><i class="fa fa-sign-in"></i>Perfil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="desconectar.php"><i class="fa fa-sign-out"></i> Logout</a>
+                <a class="nav-link" href="sessao/desconectar.php"><i class="fa fa-sign-out"></i> Logout</a>
               </li>
               <?php }?>
             </ul>
           </div>
-        </div>
       </nav>
     

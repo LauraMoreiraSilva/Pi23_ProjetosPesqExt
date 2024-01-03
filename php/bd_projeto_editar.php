@@ -1,6 +1,5 @@
 <?php
 
-//Receber dados do formulário
 $id = $_POST["id"];
 $titulo = $_POST["titulo"];
 $descricao = $_POST["descricao"];

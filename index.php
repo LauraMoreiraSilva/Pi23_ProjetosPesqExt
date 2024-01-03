@@ -4,6 +4,7 @@
 <head>
 
   <?php include 'bases/head.php'; ?>
+  <title>Página Inicial</title>
 
 </head>
 
