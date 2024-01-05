@@ -46,7 +46,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo "<tr>";
     echo "<td scope='row'>".$row["nome"]."</td>";
-    echo "<td><a href='p_areas_editar.php?id=".$row["id"]."'>EDITAR</a></td>";
+    echo "<td><a href='p_area_editar.php?id=".$row["id"]."'>EDITAR</a></td>";
     echo "<td><a href='php/p_area_remover_bd.php?id=".$row["id"]."'>REMOVER</a></td>";
     echo "</tr>";
   }
@@ -73,7 +73,6 @@ desconectar($conn);
   </div>
   
 
-   <!-- INCLUINDO CÓDIGO DE RODAPÉ COMUM A TODAS AS PÁGINAS -->
    <?php include 'Bases/rodape.php'; ?>
 
 </body>
